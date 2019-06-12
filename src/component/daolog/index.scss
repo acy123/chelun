@@ -1,0 +1,57 @@
+.daolog{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1000;
+	background-color: rgba(0,0,0,.4);
+	animation: a .3s ease forwards;
+	>.alert-content{
+		position: fixed;
+		z-index: 9999;
+		background: #f6f6f6;
+		border-radius: 7px;
+		width: 72%;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		transform-origin: 50% 50%;
+		text-align: center;
+		font-size: 0;
+		>.wrap{
+				overflow-y: scroll;
+		}
+		.alert-title-sub{
+			display: block;
+			width: 80%;
+			margin: 0 auto;
+			padding: 18px 0 6px;
+			line-height: 22px;
+			font-size: 16px;
+			font-weight: 700
+		}
+		.alert-title{
+			display: block;
+			margin: 0 auto;
+			padding: 0 0 20px;
+			max-width: 86%;
+			line-height: 16px;
+			font-size: 13px
+		}
+		.alert-ok{
+			position: relative;
+			display: block;
+			width: 100%;
+			padding: 14px 0;
+			border-radius: 0 0 7px 7px;
+			line-height: 16px;
+			font-size: 16px;
+			color: #007aff;
+			transition: background-color .1s
+		}
+	}
+}

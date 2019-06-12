@@ -1,0 +1,61 @@
+.carList{
+	>div	{
+		>p{
+			padding: 0 .1rem;
+			height: .25rem;
+			line-height: .25rem;
+			font-size: .13rem;
+			color: #999;
+			background: #f4f4f4
+		}
+		>ul{
+			background: #fff;
+			>li{
+				padding: 0 .1rem;
+				border-bottom: .09rem solid #f4f4f4;
+				overflow: hidden;
+				display: flex;
+				flex-direction: column;
+				p:first-child{
+					padding: .13rem 0 .09rem;
+					font-size: .15rem;
+					line-height: 1;
+					color: #3d3d3d
+				}
+				p:nth-child(2){
+					color: #bdbdbd;
+					font-size: .13rem
+				}
+				p:nth-child(3){
+					text-align: right;
+					padding-bottom: .05rem;
+					font-size: .12rem;
+					color: #818181;
+					span:nth-child(2){
+						font-size: .15rem;
+						color: #ff2336;
+						margin-left: .05rem;
+					}
+				}
+				button{
+					border: none;
+					outline: none;
+					border-top: 1px solid #eee;
+					width: 110%;
+					height: .4rem;
+					font-size: .16rem;
+					color: #00afff;
+					background: #fff;
+					font-weight: 500;
+					margin-left: -.15rem
+				}
+			}
+		}
+		
+	}
+	div:last-child{
+		ul:last-child{
+			border-bottom: 0.5rem solid #f4f4f4
+		}
+	}
+}

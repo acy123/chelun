@@ -1,0 +1,67 @@
+.dealer-info{
+	>ul{
+		background: #fff;
+		padding: 0 .09rem;
+		>li{
+			position: relative;
+			padding: .13rem 0 .13rem .27rem;
+			border-bottom: 1px solid #eee;
+			box-sizing: border-box;
+			height: 0.825rem;
+			&::before{
+				content: "";
+				display: inline-block;
+				width: .16rem;
+				height: .16rem;
+				border-radius: 50%;
+				border: 2px solid #ccc;
+				box-sizing: border-box;
+				position: absolute;
+				left: .0025rem;
+				top: 50%;
+				-webkit-transform: translate3d(0,-50%,0);
+				transform: translate3d(0,-50%,0)
+			}
+		}
+		li.active::before{
+			background: #3aacff;
+			border: none;
+		}
+		li.active::after{
+			content: "";
+			display: inline-block;
+			padding-top: .085rem;
+			padding-right: .05rem;
+			border: 2px solid #fff;
+			-webkit-transform: rotate(40deg) translate3d(0,-50%,0);
+			transform: rotate(40deg) translate3d(0,-50%,0);
+			position: absolute;
+			left: .035rem;
+			border-left: none;
+			border-top: none;
+			top: 47%;
+		}
+		p{
+			display: flex;
+			justify-content: space-between;
+		}
+		p:first-child{
+			width: 100%;
+			font-size: .15rem;
+			:last-child{
+				font-size: .12rem;
+				color: red
+			}
+		}
+		p:nth-child(2){
+			margin-top: .05rem;
+			font-size: .12rem;
+			color: #a2a2a2;
+			span:first-child{
+				width: 70%;
+				display: flex;
+				flex-wrap: wrap;
+			}
+		}
+	}
+}

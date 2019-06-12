@@ -1,0 +1,109 @@
+.car{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #f4f4f4;
+}
+.conent{
+  width: 100%;
+  flex: 1;
+}
+.img{
+  position: relative;
+  height: 1.64rem;
+  overflow: hidden;
+  >img{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  >span{
+    position: absolute;
+    bottom: .15rem;
+    right: .15rem;
+    color: #fff;
+    padding: 1px .05rem;
+    border-radius: .1rem;
+    background: rgba(0,0,0,.6);
+    font-size: .12rem;
+  }
+}
+.info{
+  width: 100%;
+  box-sizing: border-box;
+  padding: .18rem .05rem .15rem 0.1rem;
+  flex: 1;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    .price{
+      p:first-child{
+        font-size: .18rem;
+        color: red;
+        font-weight: 500;
+      }
+      p:last-child{
+        font-size: .13rem;
+        color: silver;
+      }
+    }
+    .action{
+      display: flex;
+      padding-top: .025rem;
+      justify-content: space-between;
+      width: 50%;
+      button{
+        width: 100%;
+        background: #00afff;
+        color: #fff;
+        outline: none;
+        border-radius: .05rem;
+        font-size: .16rem;
+        height: .35rem;
+        border: none;
+        box-sizing: border-box;
+      }
+    }
+}
+.car-list{
+  .c-type{
+    border-top: .075rem solid #f4f4f4;
+    padding: 0 .15rem;
+    font-size: .16rem;
+    height: .385rem;
+    line-height: .385rem;
+    background: #fff;
+    display: flex;
+    align-content: center;
+    >span{
+      padding-right: .13rem
+    }
+    >span.connert{
+      color: #3aacff
+    }
+  }
+
+}
+.bottom{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 99;
+  background: #3aacff;
+  height: .5rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p:first-child{
+    font-size: .16rem;
+    margin-top: .01rem;
+   font-weight: 500;
+  }
+  p:last-child{
+    font-size: .12rem;
+  }
+}
